@@ -25,7 +25,7 @@ _Agrega aquí una captura de pantalla o un gif mostrando tu aplicación en funci
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/MrLeox0/weather-app.git
+   git clone https://github.com/MrLeox0/weather.git
    cd weather-app
 Abre el archivo index.html en tu navegador.
 
