@@ -1,70 +1,24 @@
 /* ================== BASE Y RESET ================== */
+html {
+  scroll-behavior: smooth;
+}
 body{
     background: #e7e6e6;
-    align-items: center;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
 
 }
 header {
-  position: relative;
-  z-index: 1001; /* encima de cards */
-}
-nav {
-  background: #486f99;
+ background: #486f99;
   color: white;
   padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
   top: 0;
   border-radius: 10PX;
+  text-align: center;
+  font-size: 2rem;
 }
 
-nav h1 {
-  font-size: 1.5rem;
-}
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-/* ================== HAMBURGER MENU ================== */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  transition: 0.3s;
-}
-
-/* Animación del ícono */
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
 
 /* ================== HERO SECTION ================== */
 .hero {
@@ -86,27 +40,72 @@ nav h1 {
 .ciudad-cont{
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   text-align: center;
-  padding-bottom: 1rem;
-  transition: transform 0.3s;
+  padding: 1.5rem 0 3rem;
 }
 .ciudad h3{
-  text-align: center;
-  font-size: 2rem;
+   font-size: 2rem;
   margin-top: 0;
 }
-/* ================== BUSCADOR ================== */
+
+.buscador{
+
+
+}
+input[type="text"] {
+  width: 20rem;
+  height: 40px;
+  font-size: 2rem;
+}
+.buscador-boton{
+    background-color: #486f99;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: white;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* ================== PRONOSTICO ================== */
 .pronostico{
   background: white;
   border-radius: 10px;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 0;
 }
 .pronostico h3{
 text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0 0.5rem;
+}
+.p-cont{
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem 1rem;
+
+}
+.p-item {
+  background: rgb(112, 121, 172);
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: white;
   font-size: 2rem;
-  margin-top: 0.5rem;
+  
+  
+    }
+/* ================== FOOTER ================== */
+.footer{
+  background: #486f99;
+  border-radius: 10px;
+}
+.footer p{
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: Tahoma;
+  font-size: 2rem;
 }

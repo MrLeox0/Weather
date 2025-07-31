@@ -9,56 +9,78 @@
 <body>
     <header>
 <!-- ========================= HEADER & NAV ========================= -->
-          <section>
-             <nav> 
+          <section> 
                 <h1>Wheather  🌤️</h1>
-            <div class="hamburger" id="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Menú principal">
-            <span></span>
-            <span></span>
-            <span></span>
-            </div>
-            <ul class="nav-links" id="nav-links" role="navigation">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#ciudad">Tu Ciudad</a></li>
-            <li><a href="#pronostico">Pronostico</a></li>
-            </ul>
-            </nav>
         </section>
-
     </header>
+    <script src="script.js"></script>
     <main>
 <!-- ============================= HERO ============================= -->
         <section class="hero">
             <img src="./assets/hr2.gif" alt="clima" width="auto" height="auto" class="hero-img">
         </section>
 <!-- ============================ CIUDAD ============================ -->
-        <section class="ciudad" id="ciudad">
+        <section class="ciudad">
             <div class="ciudad-cont">
                 <h3> 🌤️BUSCA TU CIUDAD🌤️</h3>
-                <p>B U S C A D O R</p>
-                <p>-</p>
-                <p>-</p>
-                <p>-</p>
+            <div class="buscador">
+                 <input type="text" id="ciudad" value="Mexico" placeholder="Escribe una ciudad">
+                <button class="buscador-boton" onclick="obtenerClima()">BUSCAR</button>
+                <div id="resultado"></div>
+   </div>
+                
             </div>
           </section>
 <!-- =========================== PRONOSSTICO =========================== -->
         <section class="pronostico" id="pronostico">
-            <div>
-                <h3>Pronostico</h3>
-                 <p> T A B L A </p>
-                <p> P R O N O S T I C O </p>
-                <p>7 D I A S</p>
-                <p>-</p>
+            <h3>Pronostico</h3>
+            <p class="city"></p>
+            <div class="p-cont">                
+                <div class="p-item">
+                    <p class="Dia"></p> 
+                    <p class="emoji"></p>
+                    <p class="temp"></p>
+                    <p class="viento"></p>
+                    <p class="humedad"></p>
+                </div>
+                <div class="p-item">
+                    <p class="Dia"></p> 
+                    <p class="emoji"></p>
+                    <p class="temp"></p>
+                    <p class="viento"></p>
+                    <p class="humedad"></p>
+                </div>
+                <div class="p-item">
+                    <p class="Dia"></p> 
+                    <p class="emoji"></p>
+                    <p class="temp"></p>
+                    <p class="viento"></p>
+                    <p class="humedad"></p>
+                </div>
+                <div class="p-item">
+                    <p class="Dia"></p> 
+                    <p class="emoji"></p>
+                    <p class="temp"></p>
+                    <p class="viento"></p>
+                    <p class="humedad"></p>
+                </div>
+                <div class="p-item">
+                    <p class="Dia"></p> 
+                    <p class="emoji"></p>
+                    <p class="temp"></p>
+                    <p class="viento"></p>
+                    <p class="humedad"></p>
+                </div>
             </div>
         </section>
 
-        <p>card o hero de imagne atractiva para el clima</p>
-        <p>buscador</p>
-        <p>clima o visualizar</p>
-        <p>pronostico</p>
+
     </main>
 <!-- =========================== FOOTER =========================== -->
     <footer>
-
+        <section class="footer">
+            <p>Realizado por</p>
+            <P>MrLeox0</P>
+        </section>
     </footer>
 </body>
