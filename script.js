@@ -1,4 +1,4 @@
-const API_KEY = '2cd41f2d93b2eef71985ff0c19debd12';
+const API_KEY = 'TUAPIKEY';
 function obtenerEmoji(clima) {
   clima = clima.toLowerCase();
   if (clima.includes("lluvia")) return "🌧️";
