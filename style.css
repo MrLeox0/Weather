@@ -1,0 +1,112 @@
+/* ================== BASE Y RESET ================== */
+body{
+    background: #e7e6e6;
+    align-items: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+
+}
+header {
+  position: relative;
+  z-index: 1001; /* encima de cards */
+}
+nav {
+  background: #486f99;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-radius: 10PX;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* ================== HAMBURGER MENU ================== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Animación del ícono */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ================== HERO SECTION ================== */
+.hero {
+  display: flex;
+  height: 350px;
+  margin-bottom: 0.3rem;
+}
+
+.hero-img   {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* ================== BUSCADOR ================== */
+
+.ciudad-cont{
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+  transition: transform 0.3s;
+}
+.ciudad h3{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+}
+/* ================== BUSCADOR ================== */
+.pronostico{
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+}
+.pronostico h3{
+text-align: center;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
