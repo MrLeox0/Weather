@@ -54,4 +54,4 @@ Cambio de unidades (°C a °F)
 Modo oscuro
 
 📄 Licencia
-Este proyecto está bajo la Licencia MIT. Puedes usarlo, modificarlo y compartirlo libremente.
+Este proyecto está bajo la Licencia MIT. Puedes usarlo, modificarlo y compartirlo libremente. ☕
